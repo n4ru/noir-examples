@@ -12,4 +12,10 @@ fn main(
         public_inputs.as_slice(), 
         key_hash,
     );
+    std::verify_proof(
+        verification_key.as_slice(), 
+        proof.as_slice(), 
+        public_inputs.as_slice(), 
+        key_hash,
+    );
 }
